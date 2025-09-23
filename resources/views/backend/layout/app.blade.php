@@ -34,4 +34,20 @@
 <script src="{{asset('backend/js/bootstrap.bundle.js')}}"></script>
 
 </body>
-</html>
+</html>{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "public" }
+    }
+  ]
+}{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "public" }
+    }
+  ]
+}
