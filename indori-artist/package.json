@@ -1,0 +1,20 @@
+{
+  "name": "indori-artist",
+  "version": "1.0.0",
+  "description": "Indori Artist Management Application",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^5.1.3",
+    "toastify-js": "^1.11.2"
+  },
+  "devDependencies": {
+    "sass": "^1.32.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

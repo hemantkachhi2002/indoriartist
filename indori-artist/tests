@@ -1,0 +1,50 @@
+The `tests` directory is typically used for storing test files in a Laravel application. Below is a basic structure for the `tests` directory, including a sample test file to get you started.
+
+Directory: indori-artist/tests
+
+Contents of the `tests` directory:
+
+- **Feature**: This subdirectory can contain feature tests.
+- **Unit**: This subdirectory can contain unit tests.
+- **TestCase.php**: This is the base test case class.
+
+Here is the content for the `tests/TestCase.php` file:
+
+<?php
+
+namespace Tests;
+
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+
+abstract class TestCase extends BaseTestCase
+{
+    use CreatesApplication;
+}
+
+And here is the structure for the `tests/Feature` and `tests/Unit` directories:
+
+- **tests/Feature**: This directory can be created to hold feature tests.
+- **tests/Unit**: This directory can be created to hold unit tests.
+
+You can create a sample test file in the `tests/Feature` directory:
+
+Contents of the `tests/Feature/ExampleTest.php` file:
+
+<?php
+
+namespace Tests\Feature;
+
+use Tests\TestCase;
+
+class ExampleTest extends TestCase
+{
+    /** @test */
+    public function it_loads_the_home_page()
+    {
+        $response = $this->get('/');
+
+        $response->assertStatus(200);
+    }
+}
+
+This setup provides a basic structure for your tests and includes a sample test that checks if the home page loads successfully. You can expand upon this by adding more tests as needed.
